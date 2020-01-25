@@ -1,0 +1,23 @@
+{
+  "name": "simple-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple ES6 boilerplate project",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node ./dist/index",
+    "dev": "nodemon --exec babel-node ./src/index",
+    "clean": "rimraf dist",
+    "build": "babel ./src --out-dir dist"
+  },
+  "author": "Raymond Tang",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.0"
+  }
+}
